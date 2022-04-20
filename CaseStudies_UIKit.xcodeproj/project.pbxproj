@@ -17,6 +17,7 @@
 		634544F72810533500315B83 /* CaseStudies_UIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634544F62810533500315B83 /* CaseStudies_UIKitUITestsLaunchTests.swift */; };
 		63454505281053A000315B83 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 63454504281053A000315B83 /* ComposableArchitecture */; };
 		63454507281054A300315B83 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63454506281054A300315B83 /* RootViewController.swift */; };
+		634545092810725400315B83 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634545082810725400315B83 /* CounterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		634544F42810533500315B83 /* CaseStudies_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudies_UIKitUITests.swift; sourceTree = "<group>"; };
 		634544F62810533500315B83 /* CaseStudies_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudies_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		63454506281054A300315B83 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		634545082810725400315B83 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				634544D32810533300315B83 /* AppDelegate.swift */,
 				634544D52810533300315B83 /* SceneDelegate.swift */,
 				63454506281054A300315B83 /* RootViewController.swift */,
+				634545082810725400315B83 /* CounterViewController.swift */,
 				634544D92810533300315B83 /* Main.storyboard */,
 				634544DC2810533500315B83 /* Assets.xcassets */,
 				634544DE2810533500315B83 /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634544D42810533300315B83 /* AppDelegate.swift in Sources */,
+				634545092810725400315B83 /* CounterViewController.swift in Sources */,
 				634544D62810533300315B83 /* SceneDelegate.swift in Sources */,
 				63454507281054A300315B83 /* RootViewController.swift in Sources */,
 			);
