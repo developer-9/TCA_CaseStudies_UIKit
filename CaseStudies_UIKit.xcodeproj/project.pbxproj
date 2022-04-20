@@ -18,6 +18,7 @@
 		63454505281053A000315B83 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 63454504281053A000315B83 /* ComposableArchitecture */; };
 		63454507281054A300315B83 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63454506281054A300315B83 /* RootViewController.swift */; };
 		634545092810725400315B83 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634545082810725400315B83 /* CounterViewController.swift */; };
+		6345450C28107A1400315B83 /* UIViewRepresented.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6345450B28107A1400315B83 /* UIViewRepresented.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		634544F62810533500315B83 /* CaseStudies_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudies_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		63454506281054A300315B83 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		634545082810725400315B83 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		6345450B28107A1400315B83 /* UIViewRepresented.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresented.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				634544D52810533300315B83 /* SceneDelegate.swift */,
 				63454506281054A300315B83 /* RootViewController.swift */,
 				634545082810725400315B83 /* CounterViewController.swift */,
+				6345450A281079F300315B83 /* Internal */,
 				634544D92810533300315B83 /* Main.storyboard */,
 				634544DC2810533500315B83 /* Assets.xcassets */,
 				634544DE2810533500315B83 /* LaunchScreen.storyboard */,
@@ -130,6 +133,14 @@
 				634544F62810533500315B83 /* CaseStudies_UIKitUITestsLaunchTests.swift */,
 			);
 			path = CaseStudies_UIKitUITests;
+			sourceTree = "<group>";
+		};
+		6345450A281079F300315B83 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				6345450B28107A1400315B83 /* UIViewRepresented.swift */,
+			);
+			path = Internal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 				634544D42810533300315B83 /* AppDelegate.swift in Sources */,
 				634545092810725400315B83 /* CounterViewController.swift in Sources */,
 				634544D62810533300315B83 /* SceneDelegate.swift in Sources */,
+				6345450C28107A1400315B83 /* UIViewRepresented.swift in Sources */,
 				63454507281054A300315B83 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
