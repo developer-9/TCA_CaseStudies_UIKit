@@ -18,3 +18,14 @@ struct CaseStudy {
         self.viewController = viewController
     }
 }
+
+final class RootViewController: UITableViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Case Studies"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    
+}
