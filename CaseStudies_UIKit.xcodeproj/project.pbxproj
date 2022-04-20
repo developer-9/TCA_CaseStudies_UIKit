@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		634544D42810533300315B83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634544D32810533300315B83 /* AppDelegate.swift */; };
 		634544D62810533300315B83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634544D52810533300315B83 /* SceneDelegate.swift */; };
-		634544D82810533300315B83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634544D72810533300315B83 /* ViewController.swift */; };
 		634544DB2810533300315B83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634544D92810533300315B83 /* Main.storyboard */; };
 		634544DD2810533500315B83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 634544DC2810533500315B83 /* Assets.xcassets */; };
 		634544E02810533500315B83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634544DE2810533500315B83 /* LaunchScreen.storyboard */; };
 		634544EB2810533500315B83 /* CaseStudies_UIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634544EA2810533500315B83 /* CaseStudies_UIKitTests.swift */; };
 		634544F52810533500315B83 /* CaseStudies_UIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634544F42810533500315B83 /* CaseStudies_UIKitUITests.swift */; };
 		634544F72810533500315B83 /* CaseStudies_UIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634544F62810533500315B83 /* CaseStudies_UIKitUITestsLaunchTests.swift */; };
+		63454505281053A000315B83 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 63454504281053A000315B83 /* ComposableArchitecture */; };
+		63454507281054A300315B83 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63454506281054A300315B83 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		634544D02810533300315B83 /* CaseStudies_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaseStudies_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		634544D32810533300315B83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		634544D52810533300315B83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		634544D72810533300315B83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		634544DA2810533300315B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		634544DC2810533500315B83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		634544DF2810533500315B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,7 @@
 		634544F02810533500315B83 /* CaseStudies_UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaseStudies_UIKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		634544F42810533500315B83 /* CaseStudies_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudies_UIKitUITests.swift; sourceTree = "<group>"; };
 		634544F62810533500315B83 /* CaseStudies_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudies_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		63454506281054A300315B83 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63454505281053A000315B83 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +103,7 @@
 			children = (
 				634544D32810533300315B83 /* AppDelegate.swift */,
 				634544D52810533300315B83 /* SceneDelegate.swift */,
-				634544D72810533300315B83 /* ViewController.swift */,
+				63454506281054A300315B83 /* RootViewController.swift */,
 				634544D92810533300315B83 /* Main.storyboard */,
 				634544DC2810533500315B83 /* Assets.xcassets */,
 				634544DE2810533500315B83 /* LaunchScreen.storyboard */,
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = CaseStudies_UIKit;
+			packageProductDependencies = (
+				63454504281053A000315B83 /* ComposableArchitecture */,
+			);
 			productName = CaseStudies_UIKit;
 			productReference = 634544D02810533300315B83 /* CaseStudies_UIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 634544C72810533300315B83;
+			packageReferences = (
+				63454503281053A000315B83 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 634544D12810533300315B83 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				634544D82810533300315B83 /* ViewController.swift in Sources */,
 				634544D42810533300315B83 /* AppDelegate.swift in Sources */,
 				634544D62810533300315B83 /* SceneDelegate.swift in Sources */,
+				63454507281054A300315B83 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63454503281053A000315B83 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63454504281053A000315B83 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63454503281053A000315B83 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 634544C82810533300315B83 /* Project object */;
 }
