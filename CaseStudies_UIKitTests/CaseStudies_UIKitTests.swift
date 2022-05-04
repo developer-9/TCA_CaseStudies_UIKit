@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import ComposableArchitecture
 @testable import CaseStudies_UIKit
 
 class CaseStudies_UIKitTests: XCTestCase {
@@ -33,4 +34,19 @@ class CaseStudies_UIKitTests: XCTestCase {
         }
     }
 
+    func testCountDown() {
+        let store = TestStore(
+            initialState: CounterState(),
+            reducer: counterReducer,
+            environment: CounterEnvironment()
+        )
+        
+        store.send(.incrementButtonTapped) {
+            $0.count = 1
+        }
+        
+        store.send(.decrementButtonTapped) {
+            $0.count = 0
+        }
+    }
 }
