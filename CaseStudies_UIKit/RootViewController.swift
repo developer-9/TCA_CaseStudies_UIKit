@@ -19,6 +19,19 @@ struct CaseStudy {
     }
 }
 
+let dataSource: [CaseStudy] = [
+    CaseStudy(
+        title: "Basics",
+        viewController: CounterViewController(
+            store: Store(
+                initialState: CounterState(),
+                reducer: counterReducer,
+                environment: CounterEnvironment()
+            )
+        )
+    )
+]
+
 final class RootViewController: UITableViewController {
     
     override func viewDidLoad() {
@@ -28,10 +41,19 @@ final class RootViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+        return dataSource.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let caseStudy = datasou
+        let caseStudy = dataSource[indexPath.row]
+        let cell = UITableViewCell()
+        cell.accessoryType = .disclosureIndicator
+        cell.textLabel?.text = caseStudy.title
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let caseStudy = dataSource[indexPath.row]
+        navigationController?.pushViewController(caseStudy.viewController(), animated: true)
     }
 }
