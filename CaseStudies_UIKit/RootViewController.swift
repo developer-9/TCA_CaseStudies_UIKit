@@ -57,3 +57,10 @@ final class RootViewController: UITableViewController {
         navigationController?.pushViewController(caseStudy.viewController(), animated: true)
     }
 }
+
+struct RootViewController_Previews: PreviewProvider {
+    static var previews: some View {
+        let vc = UINavigationController(rootViewController: RootViewController())
+        return UIViewRepresented(makeUIView: { _ in vc.view })
+    }
+}
